@@ -33,6 +33,25 @@ Add the plugin to the plugins section, and configure the rule options.
 }
 ```
 
+## Using the new flat config
+
+Here is an example of how to use with the new flat config.
+
+```ts
+import noRelativeImportPaths from 'eslint-plugin-no-relative-import-paths';
+
+export default [
+  {
+    plugins: {
+      'no-relative-import-paths': noRelativeImportPaths,
+    },
+    rules: {
+      'no-relative-import-paths/no-relative-import-paths': 'error',
+    },
+  },
+]
+```
+
 ## Rule options
 
 ```json
